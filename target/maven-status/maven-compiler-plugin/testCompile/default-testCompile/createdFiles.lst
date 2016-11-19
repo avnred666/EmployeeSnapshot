@@ -1,0 +1,13 @@
+snapshot1\EmployeeSnapshotSuite.class
+snapshot1\JobDetailsTileTest.class
+snapshot1\AppTest.class
+snapshot1\VerifyJobDetailsTile.class
+snapshot1\WrongPageException.class
+snapshot1\Login.class
+snapshot1\SnapshotEmployeeSelect.class
+snapshot1\ScreenShotRule$1.class
+snapshot1\TabPresenceTest.class
+snapshot1\AllTestsInOneTest.class
+snapshot1\ScreenShotRule.class
+snapshot1\VerifyEmployee.class
+snapshot1\VerifyTabPresence.class
