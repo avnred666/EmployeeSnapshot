@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: snapshot1.TabPresenceTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 32.895 sec
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 55.251 sec

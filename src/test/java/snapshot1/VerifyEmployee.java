@@ -2,6 +2,9 @@ package snapshot1;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
@@ -19,6 +22,8 @@ public class VerifyEmployee {
 
     public void verifyHeaderBanner()
     {
+        WebDriverWait wait = new WebDriverWait(driver,100);
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.id("DERIVED_HR_EPH_NAME_DISPLAY1")));
         String expectedEmpName = "Rosanna Channing";
         String actualEmpName = driver.findElement(By.id("DERIVED_HR_EPH_NAME_DISPLAY1")).getText();
         assertEquals(expectedEmpName,actualEmpName);

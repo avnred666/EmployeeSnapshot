@@ -23,6 +23,8 @@ public class Login {
 
     public SnapshotEmployeeSelect logApp ()
     {
+        WebDriverWait wait = new WebDriverWait(driver,100);
+        wait.until(ExpectedConditions.titleIs("Oracle PeopleSoft Sign-in"));
         driver.findElement(By.id("userid")).clear();
         driver.findElement(By.id("userid")).sendKeys("PS");
         driver.findElement(By.id("pwd")).clear();
@@ -32,7 +34,7 @@ public class Login {
         driver.findElement(By.name("Submit")).click();
 
        // WebDriverWait wait = new WebDriverWait(driver,10);
-        //wait.until(ExpectedConditions.titleIs("My Homepage"));
+        // wait.until(ExpectedConditions.titleIs("My Homepage"));
 
         String title = driver.getTitle();
         if (!title.equals("My Homepage")){
